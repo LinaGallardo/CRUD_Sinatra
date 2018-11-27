@@ -1,0 +1,101 @@
+body {
+  padding-top: 75px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.container {
+  max-width:1000px;
+}
+
+#button {
+  padding: 0;
+}
+
+#button li {
+  display: inline;
+}
+
+#button li a {
+  font-family: "Time New Roman";
+  font-size: 23px;
+  text-decoration: none;
+  float: left;
+  padding: 10px;
+  background-color: #2175bc;
+  color: #fff;
+}
+
+#button li a:hover {
+  background-color: #2586d7;
+  margin-top: -2;
+  padding-bottom: 14px;]
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+label{
+  font-size: 22px;
+  font-family: "Latin Modern Roman 10";
+}
+
+input.text{
+  width: 350px;
+  height: 30px;
+  font-family: "Arial";
+  font-size: 16px;
+  border-radius: 5px;
+  border-style: ridge;
+}
+
+textarea{
+  width: 450px ;
+  height: 250px ;
+  font-family: "Arial";
+  font-size: 18px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+a.button{
+  text-decoration: none;
+  font-family: "Latin Modern Roman 10";
+  font-size: 20px;
+  color: black;
+}
+
+input.button, button{
+  background-color: white;
+  border-color: #8258FA;
+  border-radius: 10px;
+  font-family: "Latin Modern Roman 10";
+  color: black;
+  font-size: 20px;
+  width: 80px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+input.button:hover, a.button:hover{
+ cursor: pointer;
+ text-decoration: none;
+ color: #9933FF;
+}
+
+select {
+  border-color: #8258FA;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px;
+  width: 250px;
+}
+select:focus{ outline: none;}

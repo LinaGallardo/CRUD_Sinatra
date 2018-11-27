@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <title>Productos</title>
+</head>
+<body>
+  <header>
+    <ul id="button" >
+      <li><a href="/products">Home</a></li>
+      <li><a href="/products/new">Create</a></li>
+    </ul>
+    <br><br><br>
+  </header>
+
+  <div class="container">
+    <%if flash[:notice]%>
+      <p class="alert alert-success"><%= flash[:notice]%>
+    <%elsif flash[:error] %>
+      <p class="alert alert-danger"><%= flash[:error]%>
+    <%end%>
+    <%= yield %>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+  <script>
+    //** removes alerts after 4 seconds */
+    window.setTimeout(function() {
+      $(".alert").fadeTo("slow", 0 ).slideUp(400, function(){
+        $(this).remove();
+      });
+    }, 4000);
+  </script>
+
+</body>
+</html>

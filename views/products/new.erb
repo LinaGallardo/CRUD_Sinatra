@@ -1,0 +1,27 @@
+<h2>Product registration form</h2>
+
+<form action="/products/new" method="post">
+  <div class="form-group">
+    <label>Name:</label>
+    <input required class="text" type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label>Value:</label>
+    <input required class="text" type="number" name="value" id="value" placeholder="Value" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label>Brand:</label>
+    <input required class="text" type="text" name="brand" id="brand" placeholder="Brand" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label>Description:</label> <br>
+    <textarea name="description" id="description" placeholder="Description"></textarea>
+  </div>
+  <div class="form-group">
+    <label>Quantity:</label>
+    <input class="text" type="number" name="quantity" id="quantity" placeholder="Quantity" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <input class="button" type="submit" name="save" value="Save">
+  </div>
+</form>

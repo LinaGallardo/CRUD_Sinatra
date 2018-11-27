@@ -1,0 +1,25 @@
+<h2>List of products</h2>
+<form action="/products" method="get">
+  <div>
+    <input class="text" autocomplete="off" type="tex" name="search" placeholder="Name or Brand ">
+    <input class="button" type="submit" value="Search" >
+  </div>
+</form>
+<table border="1" width="1000">
+  <tr>
+    <th> Name </th>
+    <th> Value </th>
+    <th> Brand </th>
+    <th> Description </th>
+    <th> Quantity </th>
+  </tr>
+ <% @products.each do |product| %>
+    <tr>
+      <td><a href="/products/<%=product.id%>"><%=product.name%></a></td>
+      <td><%=product.value%></td>
+      <td><%=product.brand%></td>
+      <td><%=product.description%></td>
+      <td><%=product.quantity%></td>
+    </tr>
+ <%end%>
+</table>

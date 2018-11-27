@@ -1,0 +1,21 @@
+
+<form action="/products/<%= @product[:id]%>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <h3><%=@product[:name]%></h3>
+  <table border="1" width="500">
+    <tr>
+      <td>Value: <td><%=@product[:value]%></td></td>
+    </tr>
+    <tr>
+      <td>Brand: <td><%=@product[:brand]%></td></td>
+    </tr>
+    <tr>
+      <td>Description: <td><%=@product[:description]%></td></td>
+    </tr>
+    <tr>
+      <td>Quantity: <td><%=@product[:quantity]%></td></td>
+    </tr>
+  </table>
+  <button><a class="button" href="/products/<%= @product[:id] %>/edit">Edit</a></button>
+  <input class="button" onclick="return confirm('Do you want to delete the record?');" type="submit" name="delete" value="Delete">
+</form>
